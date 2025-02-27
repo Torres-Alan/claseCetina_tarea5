@@ -90,7 +90,7 @@ html {
 }
 
 .contenedor_oferta {
-    background-image: url('/img/foto_slide.jpg');
+    background-image: url('../img/foto_slide.jpg');
     background-position: center;
     background-size: cover;
     height: 450px;
