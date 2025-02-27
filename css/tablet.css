@@ -1,0 +1,9 @@
+@media (max-width: 767px) {
+    .contenedor_tarjetas {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 10px 150px;
+    }
+
+
+}

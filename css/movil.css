@@ -1,0 +1,31 @@
+@media (max-width: 419px) {
+    .contenedor_menu ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contenedor_menu ul li {
+        border-right: none;
+        border-bottom: 4px solid #ccc;
+        max-width: 100%;
+    }
+
+    .contenedor_menu ul li a {
+        display: block;
+        padding: 15px 20px;
+    }
+
+    .contenedor_piepagina{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    }
+
+    .contenedor_piepagina_redes {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
