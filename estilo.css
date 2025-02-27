@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color1: black;
+    --color2: white;
+    --color3: #efeeef;
+    --color4: #323233;
+    --color5:#cdcccd;
+
+}
+
+body {
+    font-family: Helvetica;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.ancho {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.margen {
+    padding: 15px;
+}
+
+.contenedor_cabecera {
+    margin-top: 35px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo_lo4go {
+    width: 124px;
+}
+
+.logo_lo4go img {
+    width: 100%;
+    display: block;
+}
+
+
+
+.contenedor_menu ul {
+    border-top: 4px solid #ccc;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+}
+
+
+.contenedor_menu ul li {
+    border-right: 4px solid #ccc;
+    padding: 0;
+}
+
+
+.contenedor_menu ul li:last-child {
+    border-right: none;
+}
+
+.contenedor_menu ul li a {
+    display: block;
+    padding: 15px 30px;
+    color: var(--color1);
+    text-decoration: none;
+    background-color: var(--color2);
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.contenedor_menu ul li a:hover {
+    background-color: var(--color1);
+    color: var(--color2);
+}
+
+.contenedor_oferta {
+    background-image: url('../img/foto_slide.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -15px;
+}
+
+
+.contenedor_oferta_texto {
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
+    padding: 15px 30px;
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--color1);
+    text-align: center;
+}
+
+.contenedor_popular {
+    background-color: var(--color1);
+    color: var(--color2);
+    padding: 20px 20px;
+    text-align: center;
+}
+
+
+.contenedor_tarjetas {
+    background-color: var(--color3);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+
+.tarjetas {
+    max-width: 250px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.tarjetas img {
+    width: 100%;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.tarjetas p {
+    line-height: 20px;
+    font-size: 14px;
+    color: var(--color1);
+    margin: 15px 0;
+}
+
+
+.tarjetas button {
+    background-color: #ccc;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.tarjetas button:hover {
+    background-color: #aaa;
+}
+
+.contenedor_piepagina {
+    border-top: 6px #ccc solid;
+    border-bottom: 6px var(--color1) solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.logo_lo4go_footer {
+    width: 150px;
+}
+
+.logo_lo4go_footer img {
+    width: 100%;
+    display: block;
+}
+
+.contenedor_piepagina_redes {
+    display: flex;
+    justify-content: space-evenly; /* Centra los iconos */
+    align-items: center;
+    gap: 45px; /* Espaciado entre iconos */
+    padding: 20px 50px;
+}
+
+.contenedor_piepagina_redes i {
+    font-size: 24px; /* Tamaño del icono */
+    color: #333; /* Color de los iconos */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transición suave */
+    cursor: pointer; /* Hace que los iconos sean clickeables */
+}
